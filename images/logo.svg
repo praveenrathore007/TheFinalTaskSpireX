@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SpireX Foundation logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b6cf5"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#g)"/>
+  <path d="M32 10 L48 46 H39 L32 30 L25 46 H16 Z" fill="#ffffff"/>
+  <path d="M19 54 H45" stroke="#22d3ee" stroke-width="4" stroke-linecap="round"/>
+</svg>

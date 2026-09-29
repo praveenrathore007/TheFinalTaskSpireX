@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | SpireX Foundation</title>
+  <meta name="description"
+    content="Explore sample projects that show the kind of practical, portfolio-ready work SpireX Foundation learners build.">
+  <meta name="theme-color" content="#060a16">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Shared header ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="SpireX Foundation - Home">
+        <img class="brand-mark" src="images/logo.svg" alt="" width="38" height="38">
+        <span class="brand-name">SpireX <span>Foundation</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="navMenu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="internships.html">Internships</a></li>
+        <li><a class="nav-link" href="programs.html">Programs</a></li>
+        <li><a class="nav-link" href="projects.html" aria-current="page">Projects</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-cta"><a class="btn btn-primary btn-sm" href="contact.html#join">Join Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span
+            aria-hidden="true">/</span><span aria-current="page">Projects</span></nav>
+        <span class="eyebrow">Projects</span>
+        <h1>Real work that shows <span class="grad-text">real skills.</span></h1>
+        <p class="lead">Projects are at the heart of SpireX. Here is a look at the kind of practical, portfolio-ready
+          work learners build.</p>
+      </div>
+    </section>
+
+    <!-- Project showcase -->
+    <section class="section" aria-labelledby="showcase-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="showcase-title">Project showcase</h2>
+          <p>Select a project to see the tools used and what learners practise while building it.</p>
+        </div>
+
+        <div class="notice reveal">
+          <span class="ico" data-icon="info"></span>
+          <p>These are illustrative sample projects that show the type of briefs learners work on. They are examples,
+            not a record of completed client work.</p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filter projects" data-filter-bar="projectGrid"
+          data-status="projectStatus">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web</button>
+          <button class="filter-btn" type="button" data-filter="app" aria-pressed="false">Apps</button>
+          <button class="filter-btn" type="button" data-filter="design" aria-pressed="false">Design</button>
+        </div>
+        <p class="filter-status" id="projectStatus" data-noun="projects" aria-live="polite">Showing 6 of 6 projects</p>
+
+        <div class="grid grid-3" id="projectGrid">
+          <article class="card item-card reveal" data-category="web" data-title="Learning Portal Concept"
+            data-cat-label="Web project"
+            data-summary="A responsive dashboard concept where learners can see their lessons, assignments and progress in one place. It focuses on clear layout and a friendly, readable interface."
+            data-tools="HTML5,CSS Grid,JavaScript"
+            data-learn="Building layouts with CSS Grid and Flexbox|Structuring reusable interface components|Updating the page with vanilla JavaScript"
+            data-img="images/project-portal.svg" data-alt="Learning portal dashboard concept">
+            <div class="thumb"><img src="images/project-portal.svg" alt="Learning portal dashboard concept" width="640"
+                height="400" loading="lazy"></div>
+            <div class="item-head"><span class="pill">Web</span></div>
+            <h3>Learning Portal Concept</h3>
+            <p>A responsive dashboard for lessons, assignments and progress.</p>
+            <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS Grid</span><span
+                class="tag">JavaScript</span></div>
+            <div class="card-foot"><button class="btn btn-outline btn-sm" type="button" data-open-project>View details
+                <span class="ico" data-icon="arrow-right"></span></button></div>
+          </article>
+
+          <article class="card item-card reveal" data-category="app" data-title="Task Planner Board"
+            data-cat-label="App project"
+            data-summary="A simple kanban-style board for planning tasks across To Do, In Progress and Done columns. Learners practise managing data and state with plain JavaScript."
+            data-tools="JavaScript,DOM,Local storage"
+            data-learn="Handling events and user input|Storing data in the browser with local storage|Structuring code into small, clear functions"
+            data-img="images/project-planner.svg" data-alt="Task planner board concept">
+            <div class="thumb"><img src="images/project-planner.svg" alt="Task planner board concept" width="640"
+                height="400" loading="lazy"></div>
+            <div class="item-head"><span class="pill">App</span></div>
+            <h3>Task Planner Board</h3>
+            <p>A kanban-style planner that stores tasks in the browser.</p>
+            <div class="tags"><span class="tag">JavaScript</span><span class="tag">DOM</span><span class="tag">Local
+                storage</span></div>
+            <div class="card-foot"><button class="btn btn-outline btn-sm" type="button" data-open-project>View details
+                <span class="ico" data-icon="arrow-right"></span></button></div>
+          </article>
+
+          <article class="card item-card reveal" data-category="web" data-title="Portfolio Starter"
+            data-cat-label="Web project"
+            data-summary="A clean, responsive personal portfolio template. Learners customise it with their own story and projects, creating a real page they can share with mentors and employers."
+            data-tools="HTML5,CSS3,Responsive design"
+            data-learn="Semantic HTML and accessible page structure|Responsive layout techniques|Presenting personal work clearly"
+            data-img="images/project-portfolio.svg" data-alt="Portfolio website template concept">
+            <div class="thumb"><img src="images/project-portfolio.svg" alt="Portfolio website template concept"
+                width="640" height="400" loading="lazy"></div>
+            <div class="item-head"><span class="pill">Web</span></div>
+            <h3>Portfolio Starter</h3>
+            <p>A responsive personal portfolio template to make your own.</p>
+            <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span
+                class="tag">Responsive</span></div>
+            <div class="card-foot"><button class="btn btn-outline btn-sm" type="button" data-open-project>View details
+                <span class="ico" data-icon="arrow-right"></span></button></div>
+          </article>
+
+          <article class="card item-card reveal" data-category="web" data-title="Community Event Page"
+            data-cat-label="Web project"
+            data-summary="A landing page for a community learning event with a schedule, speaker sections and a registration form that validates input before submitting."
+            data-tools="HTML5,CSS3,JavaScript"
+            data-learn="Designing a clear page hierarchy|Building and validating forms|Making sections adapt to any screen"
+            data-img="images/project-event.svg" data-alt="Community event landing page concept">
+            <div class="thumb"><img src="images/project-event.svg" alt="Community event landing page concept"
+                width="640" height="400" loading="lazy"></div>
+            <div class="item-head"><span class="pill">Web</span></div>
+            <h3>Community Event Page</h3>
+            <p>An event landing page with a schedule and validated sign-up form.</p>
+            <div class="tags"><span class="tag">HTML5</span><span class="tag">Forms</span><span
+                class="tag">JavaScript</span></div>
+            <div class="card-foot"><button class="btn btn-outline btn-sm" type="button" data-open-project>View details
+                <span class="ico" data-icon="arrow-right"></span></button></div>
+          </article>
+
+          <article class="card item-card reveal" data-category="design" data-title="Design System Starter"
+            data-cat-label="Design project"
+            data-summary="A small design system covering colours, type scale, buttons and cards. Learners see how consistent components make products faster to build and easier to use."
+            data-tools="Design tokens,Wireframes,CSS variables"
+            data-learn="Defining a colour and type system|Designing consistent, reusable components|Documenting decisions for developers"
+            data-img="images/project-designsystem.svg" data-alt="Design system starter concept">
+            <div class="thumb"><img src="images/project-designsystem.svg" alt="Design system starter concept"
+                width="640" height="400" loading="lazy"></div>
+            <div class="item-head"><span class="pill design">Design</span></div>
+            <h3>Design System Starter</h3>
+            <p>Colours, typography and components that work together.</p>
+            <div class="tags"><span class="tag">UI/UX</span><span class="tag">Tokens</span><span class="tag">CSS
+                variables</span></div>
+            <div class="card-foot"><button class="btn btn-outline btn-sm" type="button" data-open-project>View details
+                <span class="ico" data-icon="arrow-right"></span></button></div>
+          </article>
+
+          <article class="card item-card reveal" data-category="app" data-title="Quiz Application"
+            data-cat-label="App project"
+            data-summary="An interactive quiz that presents questions one at a time, checks answers and shows a final result. It is a friendly way to practise logic and user feedback."
+            data-tools="JavaScript,Arrays &amp; objects,DOM"
+            data-learn="Working with arrays and objects|Controlling flow with conditions and loops|Giving clear feedback to users"
+            data-img="images/project-quiz.svg" data-alt="Quiz application concept">
+            <div class="thumb"><img src="images/project-quiz.svg" alt="Quiz application concept" width="640"
+                height="400" loading="lazy"></div>
+            <div class="item-head"><span class="pill">App</span></div>
+            <h3>Quiz Application</h3>
+            <p>An interactive quiz that checks answers and shows results.</p>
+            <div class="tags"><span class="tag">JavaScript</span><span class="tag">Logic</span><span
+                class="tag">DOM</span></div>
+            <div class="card-foot"><button class="btn btn-outline btn-sm" type="button" data-open-project>View details
+                <span class="ico" data-icon="arrow-right"></span></button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How project work runs -->
+    <section class="section section-alt" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Project process</span>
+          <h2 id="process-title">How project work runs</h2>
+          <p>Every project follows the same clear, repeatable rhythm.</p>
+        </div>
+        <div class="grid grid-4">
+          <article class="card reveal">
+            <div class="step-num">1</div>
+            <h3>Brief</h3>
+            <p>Start with a clear goal, audience and set of requirements.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num">2</div>
+            <h3>Build</h3>
+            <p>Design and develop in small steps, testing as you go.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num">3</div>
+            <h3>Review</h3>
+            <p>Get feedback from mentors and peers, then improve your work.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num">4</div>
+            <h3>Showcase</h3>
+            <p>Present the finished project and add it to your portfolio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta reveal">
+          <h2 id="cta-title">Ready to Start Your Journey?</h2>
+          <p>Build projects like these with guidance from mentors and a supportive community.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="contact.html#join">Join Now <span class="ico"
+                data-icon="arrow-right"></span></a>
+            <a class="btn btn-outline" href="programs.html#project-lab">Explore Project Lab</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project details modal -->
+  <dialog class="modal" id="projectModal" aria-labelledby="modalTitle">
+    <div class="modal-inner">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close project details"><span class="ico"
+          data-icon="x"></span></button>
+      <div class="thumb"><img data-m="img" src="images/project-portal.svg" alt="" width="640" height="400"></div>
+      <span class="pill" data-m="cat">Project</span>
+      <h3 id="modalTitle" data-m="title">Project title</h3>
+      <p data-m="summary"></p>
+      <h4>Tools &amp; skills</h4>
+      <div class="tags" data-m="tools"></div>
+      <h4>What learners practise</h4>
+      <ul class="checklist tight" data-m="learn"></ul>
+      <p class="form-note">Illustrative sample project.</p>
+      <div class="modal-actions">
+        <a class="btn btn-primary btn-sm" href="programs.html#project-lab">Explore Project Lab <span class="ico"
+            data-icon="arrow-right"></span></a>
+        <button class="btn btn-outline btn-sm" type="button" data-close-modal>Close</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ===== Shared footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="SpireX Foundation - Home">
+            <img class="brand-mark" src="images/logo.svg" alt="" width="38" height="38">
+            <span class="brand-name">SpireX <span>Foundation</span></span>
+          </a>
+          <p class="footer-tagline grad-text">Learn. Build. Rise.</p>
+          <p>SpireX Foundation helps learners gain practical skills, real project experience and career growth through
+            programs, internships and mentorship.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <p class="footer-title">Explore</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="internships.html">Internships</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Get involved">
+          <p class="footer-title">Get Involved</p>
+          <ul class="footer-links">
+            <li><a href="internships.html#apply">Apply for an Internship</a></li>
+            <li><a href="programs.html#project-lab">Project Lab</a></li>
+            <li><a href="programs.html#mentorship">Mentorship Circle</a></li>
+            <li><a href="contact.html#faq">Frequently Asked Questions</a></li>
+            <li><a href="contact.html#join">Join SpireX</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="footer-title">Contact</p>
+          <ul class="footer-contact">
+            <li><span class="ico" data-icon="mail"></span><span>hello@spirexfoundation.org</span></li>
+            <li><span class="ico" data-icon="map-pin"></span><span>Online &amp; community-based learning</span></li>
+            <li><span class="ico" data-icon="clock"></span><span>Mon &ndash; Fri, 9:00 &ndash; 17:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> SpireX Foundation. All rights reserved.</p>
+        <p>Built with HTML, CSS &amp; JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

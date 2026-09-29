@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Programs &amp; Services | SpireX Foundation</title>
+  <meta name="description"
+    content="Explore SpireX Foundation programs in web development, JavaScript, UI/UX design, career readiness, project labs and mentorship.">
+  <meta name="theme-color" content="#060a16">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Shared header ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="SpireX Foundation - Home">
+        <img class="brand-mark" src="images/logo.svg" alt="" width="38" height="38">
+        <span class="brand-name">SpireX <span>Foundation</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="navMenu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="internships.html">Internships</a></li>
+        <li><a class="nav-link" href="programs.html" aria-current="page">Programs</a></li>
+        <li><a class="nav-link" href="projects.html">Projects</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-cta"><a class="btn btn-primary btn-sm" href="contact.html#join">Join Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span
+            aria-hidden="true">/</span><span aria-current="page">Programs</span></nav>
+        <span class="eyebrow">Programs &amp; Services</span>
+        <h1>Structured learning for <span class="grad-text">practical skills.</span></h1>
+        <p class="lead">From your first line of HTML to team projects and career preparation &mdash; choose the program
+          that fits where you are today.</p>
+      </div>
+    </section>
+
+    <!-- Programs -->
+    <section class="section" aria-labelledby="programs-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="programs-title">Our programs</h2>
+          <p>Every program combines guided lessons, hands-on practice and mentor feedback.</p>
+        </div>
+
+        <div class="notice reveal">
+          <span class="ico" data-icon="info"></span>
+          <p>Program outlines are sample content that describe our learning approach. Schedules, formats and start dates
+            are shared when you get in touch.</p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filter programs" data-filter-bar="programGrid"
+          data-status="programStatus">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="dev" aria-pressed="false">Development</button>
+          <button class="filter-btn" type="button" data-filter="design" aria-pressed="false">Design</button>
+          <button class="filter-btn" type="button" data-filter="career" aria-pressed="false">Career</button>
+        </div>
+        <p class="filter-status" id="programStatus" data-noun="programs" aria-live="polite">Showing 6 of 6 programs</p>
+
+        <div class="grid grid-3" id="programGrid">
+          <article class="card item-card reveal" id="web-foundations" data-category="dev">
+            <div class="item-head">
+              <div class="icon-box"><span class="ico" data-icon="code"></span></div><span class="pill">Beginner</span>
+            </div>
+            <h3>Web Development Foundations</h3>
+            <p>Learn how the web works and build your first responsive pages from scratch.</p>
+            <ul class="checklist tight">
+              <li>Semantic HTML5 structure</li>
+              <li>CSS3 layouts with Flexbox and Grid</li>
+              <li>Responsive design basics</li>
+              <li>Publishing your first web page</li>
+            </ul>
+            <ul class="meta">
+              <li><span class="ico" data-icon="calendar"></span>Guided lessons + weekly practice</li>
+            </ul>
+            <div class="card-foot"><a class="btn btn-outline btn-sm" href="contact.html#join">Ask about this program
+                <span class="ico" data-icon="arrow-right"></span></a></div>
+          </article>
+
+          <article class="card item-card reveal" id="js-practical" data-category="dev">
+            <div class="item-head">
+              <div class="icon-box"><span class="ico" data-icon="terminal"></span></div><span
+                class="pill">Intermediate</span>
+            </div>
+            <h3>JavaScript Practical Skills</h3>
+            <p>Add interactivity to your pages and learn to think like a developer.</p>
+            <ul class="checklist tight">
+              <li>Variables, functions and the DOM</li>
+              <li>Events, forms and validation</li>
+              <li>Working with arrays and objects</li>
+              <li>Debugging in browser dev tools</li>
+            </ul>
+            <ul class="meta">
+              <li><span class="ico" data-icon="calendar"></span>Live coding + mini-projects</li>
+            </ul>
+            <div class="card-foot"><a class="btn btn-outline btn-sm" href="contact.html#join">Ask about this program
+                <span class="ico" data-icon="arrow-right"></span></a></div>
+          </article>
+
+          <article class="card item-card reveal" id="ui-ux-essentials" data-category="design">
+            <div class="item-head">
+              <div class="icon-box"><span class="ico" data-icon="layout"></span></div><span
+                class="pill design">Beginner</span>
+            </div>
+            <h3>UI/UX Design Essentials</h3>
+            <p>Understand users, design clear interfaces and present your ideas with confidence.</p>
+            <ul class="checklist tight">
+              <li>Layout, colour and typography</li>
+              <li>Wireframes and prototypes</li>
+              <li>Accessibility basics</li>
+              <li>Handing designs to developers</li>
+            </ul>
+            <ul class="meta">
+              <li><span class="ico" data-icon="calendar"></span>Studio-style workshops</li>
+            </ul>
+            <div class="card-foot"><a class="btn btn-outline btn-sm" href="contact.html#join">Ask about this program
+                <span class="ico" data-icon="arrow-right"></span></a></div>
+          </article>
+
+          <article class="card item-card reveal" id="project-lab" data-category="dev design">
+            <div class="item-head">
+              <div class="icon-box"><span class="ico" data-icon="layers"></span></div><span
+                class="pill">Intermediate</span>
+            </div>
+            <h3>Project Lab</h3>
+            <p>Work in small teams on a real brief, from planning to a finished demo.</p>
+            <ul class="checklist tight">
+              <li>Working from a project brief</li>
+              <li>Team collaboration and code review</li>
+              <li>Sprint planning basics</li>
+              <li>Demoing a finished project</li>
+            </ul>
+            <ul class="meta">
+              <li><span class="ico" data-icon="calendar"></span>Team-based project sprints</li>
+            </ul>
+            <div class="card-foot"><a class="btn btn-outline btn-sm" href="contact.html#join">Ask about this program
+                <span class="ico" data-icon="arrow-right"></span></a></div>
+          </article>
+
+          <article class="card item-card reveal" id="career-readiness" data-category="career">
+            <div class="item-head">
+              <div class="icon-box"><span class="ico" data-icon="briefcase"></span></div><span class="pill career">All
+                levels</span>
+            </div>
+            <h3>Career Readiness Workshop</h3>
+            <p>Get ready for internship and job applications with practical, personal guidance.</p>
+            <ul class="checklist tight">
+              <li>Resume and portfolio review</li>
+              <li>Interview practice</li>
+              <li>Presenting your project work</li>
+              <li>Planning your next career steps</li>
+            </ul>
+            <ul class="meta">
+              <li><span class="ico" data-icon="calendar"></span>Short workshops + 1:1 feedback</li>
+            </ul>
+            <div class="card-foot"><a class="btn btn-outline btn-sm" href="contact.html#join">Ask about this program
+                <span class="ico" data-icon="arrow-right"></span></a></div>
+          </article>
+
+          <article class="card item-card reveal" id="mentorship" data-category="career">
+            <div class="item-head">
+              <div class="icon-box"><span class="ico" data-icon="users"></span></div><span class="pill career">All
+                levels</span>
+            </div>
+            <h3>Mentorship Circle</h3>
+            <p>Regular small-group sessions with a mentor who helps you stay on track.</p>
+            <ul class="checklist tight">
+              <li>Setting clear learning goals</li>
+              <li>Getting unstuck faster</li>
+              <li>Building healthy feedback habits</li>
+              <li>Creating a long-term growth plan</li>
+            </ul>
+            <ul class="meta">
+              <li><span class="ico" data-icon="calendar"></span>Small-group mentor sessions</li>
+            </ul>
+            <div class="card-foot"><a class="btn btn-outline btn-sm" href="contact.html#join">Ask about this program
+                <span class="ico" data-icon="arrow-right"></span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section section-alt" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Services</span>
+          <h2 id="services-title">Support beyond the classroom</h2>
+          <p>Extra ways SpireX helps you keep moving forward.</p>
+        </div>
+        <div class="grid grid-4">
+          <article class="card reveal">
+            <div class="icon-box"><span class="ico" data-icon="users"></span></div>
+            <h3>Mentorship</h3>
+            <p>Guidance and encouragement from people who have been where you are.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><span class="ico" data-icon="eye"></span></div>
+            <h3>Portfolio Review</h3>
+            <p>Constructive feedback to help your projects tell a clear story.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><span class="ico" data-icon="compass"></span></div>
+            <h3>Career Guidance</h3>
+            <p>Help with resumes, interviews and planning your next opportunity.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><span class="ico" data-icon="lightbulb"></span></div>
+            <h3>Community Workshops</h3>
+            <p>Short sessions on tools, techniques and ideas shared with the community.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning path -->
+    <section class="section" aria-labelledby="path-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Learning path</span>
+          <h2 id="path-title">A clear route forward</h2>
+          <p>Move through the stages at your own pace.</p>
+        </div>
+        <div class="grid grid-4">
+          <article class="card reveal">
+            <div class="step-num">1</div>
+            <h3>Foundations</h3>
+            <p>Start with Web Development Foundations or UI/UX Design Essentials.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num">2</div>
+            <h3>Practical Skills</h3>
+            <p>Deepen your skills with JavaScript and guided practice.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num">3</div>
+            <h3>Project Lab</h3>
+            <p>Apply everything in a team project with mentor feedback.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num">4</div>
+            <h3>Internship</h3>
+            <p>Take your experience into a hands-on internship track.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-alt" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta reveal">
+          <h2 id="cta-title">Ready to Start Your Journey?</h2>
+          <p>Tell us where you are and where you want to go &mdash; we'll help you find the right program.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="contact.html#join">Join Now <span class="ico"
+                data-icon="arrow-right"></span></a>
+            <a class="btn btn-outline" href="internships.html">Explore Internships</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Shared footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="SpireX Foundation - Home">
+            <img class="brand-mark" src="images/logo.svg" alt="" width="38" height="38">
+            <span class="brand-name">SpireX <span>Foundation</span></span>
+          </a>
+          <p class="footer-tagline grad-text">Learn. Build. Rise.</p>
+          <p>SpireX Foundation helps learners gain practical skills, real project experience and career growth through
+            programs, internships and mentorship.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <p class="footer-title">Explore</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="internships.html">Internships</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Get involved">
+          <p class="footer-title">Get Involved</p>
+          <ul class="footer-links">
+            <li><a href="internships.html#apply">Apply for an Internship</a></li>
+            <li><a href="programs.html#project-lab">Project Lab</a></li>
+            <li><a href="programs.html#mentorship">Mentorship Circle</a></li>
+            <li><a href="contact.html#faq">Frequently Asked Questions</a></li>
+            <li><a href="contact.html#join">Join SpireX</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="footer-title">Contact</p>
+          <ul class="footer-contact">
+            <li><span class="ico" data-icon="mail"></span><span>hello@spirexfoundation.org</span></li>
+            <li><span class="ico" data-icon="map-pin"></span><span>Online &amp; community-based learning</span></li>
+            <li><span class="ico" data-icon="clock"></span><span>Mon &ndash; Fri, 9:00 &ndash; 17:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> SpireX Foundation. All rights reserved.</p>
+        <p>Built with HTML, CSS &amp; JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

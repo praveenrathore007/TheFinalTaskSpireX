@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Portfolio website template concept">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f3a55"/><stop offset="1" stop-color="#0a1122"/></linearGradient>
+    <linearGradient id="ac" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b6cf5"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+  <rect x="40" y="36" width="560" height="328" rx="16" fill="#0d1731" stroke="#2a3a66"/>
+  <circle cx="66" cy="60" r="5" fill="#f87171"/><circle cx="84" cy="60" r="5" fill="#fbbf24"/><circle cx="102" cy="60" r="5" fill="#34d399"/>
+  <circle cx="110" cy="150" r="38" fill="url(#ac)"/>
+  <rect x="170" y="120" width="220" height="20" rx="10" fill="#e8edf7" opacity=".9"/>
+  <rect x="170" y="152" width="290" height="10" rx="5" fill="#41527f"/>
+  <rect x="170" y="172" width="240" height="10" rx="5" fill="#41527f"/>
+  <rect x="170" y="198" width="100" height="28" rx="14" fill="#22d3ee"/>
+  <rect x="64" y="254" width="164" height="90" rx="12" fill="#14224a" stroke="#2a3a66"/>
+  <rect x="238" y="254" width="164" height="90" rx="12" fill="#14224a" stroke="#2a3a66"/>
+  <rect x="412" y="254" width="164" height="90" rx="12" fill="#14224a" stroke="#2a3a66"/>
+  <rect x="78" y="268" width="136" height="44" rx="8" fill="url(#ac)" opacity=".8"/>
+  <rect x="252" y="268" width="136" height="44" rx="8" fill="#22d3ee" opacity=".55"/>
+  <rect x="426" y="268" width="136" height="44" rx="8" fill="#7c3aed" opacity=".7"/>
+  <rect x="78" y="322" width="80" height="8" rx="4" fill="#9aa8c4"/><rect x="252" y="322" width="80" height="8" rx="4" fill="#9aa8c4"/><rect x="426" y="322" width="80" height="8" rx="4" fill="#9aa8c4"/>
+</svg>

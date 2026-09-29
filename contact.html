@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | SpireX Foundation</title>
+  <meta name="description"
+    content="Contact SpireX Foundation to join, ask about programs and internships, or explore mentoring and partnership opportunities.">
+  <meta name="theme-color" content="#060a16">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Shared header ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="SpireX Foundation - Home">
+        <img class="brand-mark" src="images/logo.svg" alt="" width="38" height="38">
+        <span class="brand-name">SpireX <span>Foundation</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="navMenu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="internships.html">Internships</a></li>
+        <li><a class="nav-link" href="programs.html">Programs</a></li>
+        <li><a class="nav-link" href="projects.html">Projects</a></li>
+        <li><a class="nav-link" href="contact.html" aria-current="page">Contact</a></li>
+        <li class="nav-cta"><a class="btn btn-primary btn-sm" href="contact.html#join">Join Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span
+            aria-hidden="true">/</span><span aria-current="page">Contact</span></nav>
+        <span class="eyebrow">Contact</span>
+        <h1>Let's start the <span class="grad-text">conversation.</span></h1>
+        <p class="lead">Have a question, want to join SpireX, or interested in mentoring or partnering with us? Send us
+          a message and we'll get back to you.</p>
+      </div>
+    </section>
+
+    <!-- Contact info + form -->
+    <section class="section" id="join" aria-labelledby="contact-title">
+      <div class="container split top wide-left">
+        <div class="reveal">
+          <span class="eyebrow">Get in touch</span>
+          <h2 id="contact-title">Send us a message</h2>
+          <p class="lead">Tell us a little about yourself and how we can help. We read every message.</p>
+          <div class="stack">
+            <div class="card info-item card-static">
+              <div class="icon-box"><span class="ico" data-icon="mail"></span></div>
+              <div>
+                <h3>Email</h3>
+                <p>hello@spirexfoundation.org</p>
+              </div>
+            </div>
+            <div class="card info-item card-static">
+              <div class="icon-box"><span class="ico" data-icon="map-pin"></span></div>
+              <div>
+                <h3>Where we work</h3>
+                <p>Online &amp; community-based learning</p>
+              </div>
+            </div>
+            <div class="card info-item card-static">
+              <div class="icon-box"><span class="ico" data-icon="clock"></span></div>
+              <div>
+                <h3>Office hours</h3>
+                <p>Monday &ndash; Friday, 9:00 &ndash; 17:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="card card-static form-card">
+            <form data-validate data-success="Thank you, {name}! Your message is complete.">
+              <div class="form-grid two">
+                <div class="field">
+                  <label for="name">Full name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" required
+                    minlength="2" data-error="Please enter your full name.">
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="field">
+                  <label for="email">Email address</label>
+                  <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com"
+                    required data-error="Please enter your email address.">
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="field full">
+                  <label for="topic">How can we help?</label>
+                  <select id="topic" name="topic" required data-error="Please choose a topic.">
+                    <option value="">Select a topic</option>
+                    <option value="join">Joining SpireX</option>
+                    <option value="internship">Internship question</option>
+                    <option value="program">Program question</option>
+                    <option value="mentor">Mentoring or partnership</option>
+                    <option value="general">General question</option>
+                  </select>
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="field full">
+                  <label for="message">Your message</label>
+                  <textarea id="message" name="message" placeholder="Write your message here..." required minlength="20"
+                    data-error="Please write a short message."></textarea>
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="field full">
+                  <div class="check-field">
+                    <input id="consent" name="consent" type="checkbox" required
+                      data-error="Please confirm so we can reply to you.">
+                    <label for="consent">I agree to be contacted about my message.</label>
+                  </div>
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="full">
+                  <button class="btn btn-primary btn-block" type="submit">Send message <span class="ico"
+                      data-icon="send"></span></button>
+                </div>
+              </div>
+              <p class="form-note">Demo note: this is a front-end project, so form data is checked in your browser and
+                is not sent anywhere.</p>
+            </form>
+            <div class="form-success" role="status">
+              <span class="ico" data-icon="check-circle"></span>
+              <p data-success-text></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faq-title">Frequently asked questions</h2>
+          <p>Quick answers to common questions about SpireX.</p>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>Who can join SpireX Foundation?</summary>
+            <p>Anyone motivated to learn practical skills is welcome &mdash; from complete beginners to early-career
+              professionals looking to grow.</p>
+          </details>
+          <details>
+            <summary>Do I need to know how to code already?</summary>
+            <p>No. Several programs and internship tracks are designed for beginners, and mentors help you progress step
+              by step.</p>
+          </details>
+          <details>
+            <summary>How do I apply for an internship?</summary>
+            <p>Visit the <a href="internships.html#apply" style="color: var(--accent); font-weight: 600;">Internships
+                page</a>, choose a track and complete the short application form.</p>
+          </details>
+          <details>
+            <summary>Can I become a mentor or partner with SpireX?</summary>
+            <p>Yes! Select "Mentoring or partnership" in the form above and tell us how you'd like to get involved.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta reveal">
+          <h2 id="cta-title">Not sure where to begin?</h2>
+          <p>Browse our programs and internships to see which path fits you best.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="programs.html">Explore Programs <span class="ico"
+                data-icon="arrow-right"></span></a>
+            <a class="btn btn-outline" href="internships.html">Explore Internships</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Shared footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="SpireX Foundation - Home">
+            <img class="brand-mark" src="images/logo.svg" alt="" width="38" height="38">
+            <span class="brand-name">SpireX <span>Foundation</span></span>
+          </a>
+          <p class="footer-tagline grad-text">Learn. Build. Rise.</p>
+          <p>SpireX Foundation helps learners gain practical skills, real project experience and career growth through
+            programs, internships and mentorship.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <p class="footer-title">Explore</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="internships.html">Internships</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Get involved">
+          <p class="footer-title">Get Involved</p>
+          <ul class="footer-links">
+            <li><a href="internships.html#apply">Apply for an Internship</a></li>
+            <li><a href="programs.html#project-lab">Project Lab</a></li>
+            <li><a href="programs.html#mentorship">Mentorship Circle</a></li>
+            <li><a href="contact.html#faq">Frequently Asked Questions</a></li>
+            <li><a href="contact.html#join">Join SpireX</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="footer-title">Contact</p>
+          <ul class="footer-contact">
+            <li><span class="ico" data-icon="mail"></span><span>hello@spirexfoundation.org</span></li>
+            <li><span class="ico" data-icon="map-pin"></span><span>Online &amp; community-based learning</span></li>
+            <li><span class="ico" data-icon="clock"></span><span>Mon &ndash; Fri, 9:00 &ndash; 17:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> SpireX Foundation. All rights reserved.</p>
+        <p>Built with HTML, CSS &amp; JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

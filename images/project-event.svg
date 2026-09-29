@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Community event landing page concept">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a1b55"/><stop offset="1" stop-color="#0a1122"/></linearGradient>
+    <linearGradient id="ac" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+  <rect x="40" y="36" width="560" height="328" rx="16" fill="#0d1731" stroke="#2a3a66"/>
+  <circle cx="66" cy="60" r="5" fill="#f87171"/><circle cx="84" cy="60" r="5" fill="#fbbf24"/><circle cx="102" cy="60" r="5" fill="#34d399"/>
+  <rect x="200" y="98" width="240" height="14" rx="7" fill="#22d3ee" opacity=".7"/>
+  <rect x="150" y="128" width="340" height="24" rx="12" fill="#e8edf7" opacity=".92"/>
+  <rect x="200" y="162" width="240" height="24" rx="12" fill="url(#ac)"/>
+  <rect x="215" y="204" width="210" height="10" rx="5" fill="#41527f"/>
+  <rect x="270" y="228" width="100" height="30" rx="15" fill="#3b6cf5"/>
+  <rect x="64" y="284" width="160" height="60" rx="12" fill="#14224a" stroke="#2a3a66"/>
+  <rect x="240" y="284" width="160" height="60" rx="12" fill="#14224a" stroke="#2a3a66"/>
+  <rect x="416" y="284" width="160" height="60" rx="12" fill="#14224a" stroke="#2a3a66"/>
+  <rect x="78" y="298" width="44" height="10" rx="5" fill="#22d3ee"/><rect x="78" y="318" width="110" height="8" rx="4" fill="#9aa8c4"/>
+  <rect x="254" y="298" width="44" height="10" rx="5" fill="#fbbf24"/><rect x="254" y="318" width="110" height="8" rx="4" fill="#9aa8c4"/>
+  <rect x="430" y="298" width="44" height="10" rx="5" fill="#34d399"/><rect x="430" y="318" width="110" height="8" rx="4" fill="#9aa8c4"/>
+</svg>

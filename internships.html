@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Internships | SpireX Foundation</title>
+  <meta name="description"
+    content="Explore SpireX Foundation internship tracks in development, design, content and coordination, and apply through our simple form.">
+  <meta name="theme-color" content="#060a16">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Shared header ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="SpireX Foundation - Home">
+        <img class="brand-mark" src="images/logo.svg" alt="" width="38" height="38">
+        <span class="brand-name">SpireX <span>Foundation</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="navMenu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="internships.html" aria-current="page">Internships</a></li>
+        <li><a class="nav-link" href="programs.html">Programs</a></li>
+        <li><a class="nav-link" href="projects.html">Projects</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-cta"><a class="btn btn-primary btn-sm" href="contact.html#join">Join Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span
+            aria-hidden="true">/</span><span aria-current="page">Internships</span></nav>
+        <span class="eyebrow">Internships</span>
+        <h1>Learn by doing <span class="grad-text">real work.</span></h1>
+        <p class="lead">Our internship tracks give you guided, hands-on experience with real tasks, supportive mentors
+          and a portfolio you can be proud of.</p>
+      </div>
+    </section>
+
+    <!-- Tracks -->
+    <section class="section" aria-labelledby="tracks-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="tracks-title">Choose your internship track</h2>
+          <p>Filter by area and find the track that fits your goals.</p>
+        </div>
+
+        <div class="notice reveal">
+          <span class="ico" data-icon="info"></span>
+          <p>The tracks below are sample listings that show how our internships are structured. Current openings,
+            durations and start dates are confirmed with applicants directly.</p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filter internship tracks" data-filter-bar="internshipGrid"
+          data-status="internshipStatus">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="dev" aria-pressed="false">Development</button>
+          <button class="filter-btn" type="button" data-filter="design" aria-pressed="false">Design</button>
+          <button class="filter-btn" type="button" data-filter="content" aria-pressed="false">Content</button>
+          <button class="filter-btn" type="button" data-filter="ops" aria-pressed="false">Coordination</button>
+        </div>
+        <p class="filter-status" id="internshipStatus" data-noun="tracks" aria-live="polite">Showing 6 of 6 tracks</p>
+
+        <div class="grid grid-3" id="internshipGrid">
+          <article class="card item-card reveal" data-category="dev">
+            <div class="item-head">
+              <div class="icon-box"><span class="ico" data-icon="code"></span></div><span
+                class="pill">Development</span>
+            </div>
+            <h3>Frontend Web Development Intern</h3>
+            <p>Build responsive pages and components with HTML, CSS and JavaScript while working from real design
+              briefs.</p>
+            <ul class="meta">
+              <li><span class="ico" data-icon="clock"></span>8&ndash;12 weeks (sample)</li>
+              <li><span class="ico" data-icon="globe"></span>Remote-friendly</li>
+              <li><span class="ico" data-icon="layers"></span>Beginner to intermediate</li>
+            </ul>
+            <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span
+                class="tag">JavaScript</span><span class="tag">Git</span></div>
+            <div class="card-foot"><a class="btn btn-primary btn-sm" href="#apply" data-track="frontend">Apply now <span
+                  class="ico" data-icon="arrow-right"></span></a></div>
+          </article>
+
+          <article class="card item-card reveal" data-category="dev">
+            <div class="item-head">
+              <div class="icon-box"><span class="ico" data-icon="terminal"></span></div><span
+                class="pill">Development</span>
+            </div>
+            <h3>JavaScript Application Intern</h3>
+            <p>Create small interactive tools &mdash; forms, dashboards and trackers &mdash; using clean,
+              well-structured vanilla JavaScript.</p>
+            <ul class="meta">
+              <li><span class="ico" data-icon="clock"></span>8&ndash;12 weeks (sample)</li>
+              <li><span class="ico" data-icon="globe"></span>Remote-friendly</li>
+              <li><span class="ico" data-icon="layers"></span>Intermediate</li>
+            </ul>
+            <div class="tags"><span class="tag">JavaScript</span><span class="tag">DOM</span><span
+                class="tag">Debugging</span><span class="tag">Local storage</span></div>
+            <div class="card-foot"><a class="btn btn-primary btn-sm" href="#apply" data-track="javascript">Apply now
+                <span class="ico" data-icon="arrow-right"></span></a></div>
+          </article>
+
+          <article class="card item-card reveal" data-category="design">
+            <div class="item-head">
+              <div class="icon-box"><span class="ico" data-icon="layout"></span></div><span
+                class="pill design">Design</span>
+            </div>
+            <h3>UI/UX Design Intern</h3>
+            <p>Turn ideas into wireframes and prototypes, run simple usability checks and document your design
+              decisions.</p>
+            <ul class="meta">
+              <li><span class="ico" data-icon="clock"></span>8&ndash;10 weeks (sample)</li>
+              <li><span class="ico" data-icon="globe"></span>Remote-friendly</li>
+              <li><span class="ico" data-icon="layers"></span>Beginner to intermediate</li>
+            </ul>
+            <div class="tags"><span class="tag">Wireframing</span><span class="tag">Prototyping</span><span
+                class="tag">User research</span></div>
+            <div class="card-foot"><a class="btn btn-primary btn-sm" href="#apply" data-track="uiux">Apply now <span
+                  class="ico" data-icon="arrow-right"></span></a></div>
+          </article>
+
+          <article class="card item-card reveal" data-category="design">
+            <div class="item-head">
+              <div class="icon-box"><span class="ico" data-icon="pen"></span></div><span
+                class="pill design">Design</span>
+            </div>
+            <h3>Visual &amp; Brand Design Intern</h3>
+            <p>Support SpireX with consistent visuals for learning materials, announcements and event graphics.</p>
+            <ul class="meta">
+              <li><span class="ico" data-icon="clock"></span>6&ndash;8 weeks (sample)</li>
+              <li><span class="ico" data-icon="globe"></span>Remote-friendly</li>
+              <li><span class="ico" data-icon="layers"></span>Beginner</li>
+            </ul>
+            <div class="tags"><span class="tag">Layout</span><span class="tag">Typography</span><span
+                class="tag">Colour</span></div>
+            <div class="card-foot"><a class="btn btn-primary btn-sm" href="#apply" data-track="visual">Apply now <span
+                  class="ico" data-icon="arrow-right"></span></a></div>
+          </article>
+
+          <article class="card item-card reveal" data-category="content">
+            <div class="item-head">
+              <div class="icon-box"><span class="ico" data-icon="file-text"></span></div><span
+                class="pill content">Content</span>
+            </div>
+            <h3>Content &amp; Community Intern</h3>
+            <p>Write learner stories, guides and updates, and help welcome new members to the SpireX community.</p>
+            <ul class="meta">
+              <li><span class="ico" data-icon="clock"></span>6&ndash;8 weeks (sample)</li>
+              <li><span class="ico" data-icon="globe"></span>Remote-friendly</li>
+              <li><span class="ico" data-icon="layers"></span>Beginner</li>
+            </ul>
+            <div class="tags"><span class="tag">Writing</span><span class="tag">Editing</span><span
+                class="tag">Community</span></div>
+            <div class="card-foot"><a class="btn btn-primary btn-sm" href="#apply" data-track="content">Apply now <span
+                  class="ico" data-icon="arrow-right"></span></a></div>
+          </article>
+
+          <article class="card item-card reveal" data-category="ops">
+            <div class="item-head">
+              <div class="icon-box"><span class="ico" data-icon="flag"></span></div><span
+                class="pill ops">Coordination</span>
+            </div>
+            <h3>Project Coordination Intern</h3>
+            <p>Help teams plan sprints, track tasks and keep learner projects moving with clear communication.</p>
+            <ul class="meta">
+              <li><span class="ico" data-icon="clock"></span>8 weeks (sample)</li>
+              <li><span class="ico" data-icon="globe"></span>Remote-friendly</li>
+              <li><span class="ico" data-icon="layers"></span>Beginner to intermediate</li>
+            </ul>
+            <div class="tags"><span class="tag">Planning</span><span class="tag">Communication</span><span
+                class="tag">Task tracking</span></div>
+            <div class="card-foot"><a class="btn btn-primary btn-sm" href="#apply" data-track="coordination">Apply now
+                <span class="ico" data-icon="arrow-right"></span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- What you'll gain -->
+    <section class="section section-alt" aria-labelledby="gain-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">What you'll gain</span>
+          <h2 id="gain-title">More than a line on your resume</h2>
+        </div>
+        <div class="grid grid-4">
+          <article class="card reveal">
+            <div class="icon-box"><span class="ico" data-icon="briefcase"></span></div>
+            <h3>Real Tasks</h3>
+            <p>Work on realistic assignments that mirror professional projects.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><span class="ico" data-icon="users"></span></div>
+            <h3>Mentor Support</h3>
+            <p>Regular check-ins and feedback from experienced mentors.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><span class="ico" data-icon="award"></span></div>
+            <h3>Portfolio Pieces</h3>
+            <p>Finish with work you can share in applications and interviews.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><span class="ico" data-icon="target"></span></div>
+            <h3>Career Guidance</h3>
+            <p>Practical advice on your next steps after the internship.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to apply -->
+    <section class="section" aria-labelledby="steps-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">How to apply</span>
+          <h2 id="steps-title">Four simple steps</h2>
+        </div>
+        <div class="grid grid-4">
+          <article class="card reveal">
+            <div class="step-num">1</div>
+            <h3>Pick a track</h3>
+            <p>Choose the internship track that matches your interests and level.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num">2</div>
+            <h3>Send the form</h3>
+            <p>Tell us a little about yourself and why you want to join.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num">3</div>
+            <h3>Have a chat</h3>
+            <p>We'll reach out for a short, friendly conversation about your goals.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num">4</div>
+            <h3>Start building</h3>
+            <p>Meet your mentor, get your first task and begin your journey.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Application form -->
+    <section class="section section-alt" id="apply" aria-labelledby="apply-title">
+      <div class="container split top">
+        <div class="reveal">
+          <span class="eyebrow">Apply</span>
+          <h2 id="apply-title">Start your internship application</h2>
+          <p class="lead">Complete the short form and tell us about your interests. There's no need for a perfect
+            portfolio &mdash; curiosity and commitment matter most.</p>
+          <ul class="checklist">
+            <li>Beginner-friendly tracks available</li>
+            <li>Guidance from a mentor</li>
+            <li>Portfolio-focused, practical tasks</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <div class="card card-static form-card">
+            <form data-validate data-success="Thank you, {name}! Your application form is complete.">
+              <div class="form-grid two">
+                <div class="field">
+                  <label for="name">Full name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" required
+                    minlength="2" data-error="Please enter your full name.">
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="field">
+                  <label for="email">Email address</label>
+                  <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com"
+                    required data-error="Please enter your email address.">
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="field">
+                  <label for="track">Internship track</label>
+                  <select id="track" name="track" required data-error="Please choose an internship track.">
+                    <option value="">Select a track</option>
+                    <option value="frontend">Frontend Web Development</option>
+                    <option value="javascript">JavaScript Application</option>
+                    <option value="uiux">UI/UX Design</option>
+                    <option value="visual">Visual &amp; Brand Design</option>
+                    <option value="content">Content &amp; Community</option>
+                    <option value="coordination">Project Coordination</option>
+                  </select>
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="field">
+                  <label for="level">Experience level</label>
+                  <select id="level" name="level" required data-error="Please choose your experience level.">
+                    <option value="">Select your level</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                  </select>
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="field full">
+                  <label for="portfolio">Portfolio or profile link <span class="opt">(optional)</span></label>
+                  <input id="portfolio" name="portfolio" type="url" placeholder="https://">
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="field full">
+                  <label for="motivation">Why do you want to join?</label>
+                  <textarea id="motivation" name="motivation"
+                    placeholder="Tell us about your goals and what you'd like to learn..." required minlength="20"
+                    data-error="Please tell us a little about your goals."></textarea>
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="field full">
+                  <div class="check-field">
+                    <input id="consent" name="consent" type="checkbox" required
+                      data-error="Please confirm so we can contact you.">
+                    <label for="consent">I agree to be contacted about my application.</label>
+                  </div>
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="full">
+                  <button class="btn btn-primary btn-block" type="submit">Submit application <span class="ico"
+                      data-icon="send"></span></button>
+                </div>
+              </div>
+              <p class="form-note">Demo note: this is a front-end project, so form data is checked in your browser and
+                is not sent anywhere.</p>
+            </form>
+            <div class="form-success" role="status">
+              <span class="ico" data-icon="check-circle"></span>
+              <p data-success-text></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faq-title">Internship questions</h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>Do I need previous experience?</summary>
+            <p>Not for every track. Several tracks are beginner-friendly. Choose the level that fits you and your mentor
+              will help you grow from there.</p>
+          </details>
+          <details>
+            <summary>Can I apply for more than one track?</summary>
+            <p>Yes. Submit a separate application for each track you're interested in and mention your preferred one in
+              your message.</p>
+          </details>
+          <details>
+            <summary>How much time will I need each week?</summary>
+            <p>Time commitments are agreed with each intern when they join, so the schedule can fit alongside studies or
+              work.</p>
+          </details>
+          <details>
+            <summary>What happens after I apply?</summary>
+            <p>We review your details and get in touch to arrange a short conversation about your goals and the best
+              track for you.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Shared footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="SpireX Foundation - Home">
+            <img class="brand-mark" src="images/logo.svg" alt="" width="38" height="38">
+            <span class="brand-name">SpireX <span>Foundation</span></span>
+          </a>
+          <p class="footer-tagline grad-text">Learn. Build. Rise.</p>
+          <p>SpireX Foundation helps learners gain practical skills, real project experience and career growth through
+            programs, internships and mentorship.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <p class="footer-title">Explore</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="internships.html">Internships</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Get involved">
+          <p class="footer-title">Get Involved</p>
+          <ul class="footer-links">
+            <li><a href="internships.html#apply">Apply for an Internship</a></li>
+            <li><a href="programs.html#project-lab">Project Lab</a></li>
+            <li><a href="programs.html#mentorship">Mentorship Circle</a></li>
+            <li><a href="contact.html#faq">Frequently Asked Questions</a></li>
+            <li><a href="contact.html#join">Join SpireX</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="footer-title">Contact</p>
+          <ul class="footer-contact">
+            <li><span class="ico" data-icon="mail"></span><span>hello@spirexfoundation.org</span></li>
+            <li><span class="ico" data-icon="map-pin"></span><span>Online &amp; community-based learning</span></li>
+            <li><span class="ico" data-icon="clock"></span><span>Mon &ndash; Fri, 9:00 &ndash; 17:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> SpireX Foundation. All rights reserved.</p>
+        <p>Built with HTML, CSS &amp; JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

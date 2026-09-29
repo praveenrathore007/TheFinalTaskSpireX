@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SpireX Foundation | Learn. Build. Rise.</title>
+  <meta name="description"
+    content="SpireX Foundation helps learners gain practical skills, real project experience and career growth through programs, internships and mentorship.">
+  <meta name="theme-color" content="#060a16">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Shared header ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="SpireX Foundation - Home">
+        <img class="brand-mark" src="images/logo.svg" alt="" width="38" height="38">
+        <span class="brand-name">SpireX <span>Foundation</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="navMenu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a class="nav-link" href="index.html" aria-current="page">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="internships.html">Internships</a></li>
+        <li><a class="nav-link" href="programs.html">Programs</a></li>
+        <li><a class="nav-link" href="projects.html">Projects</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-cta"><a class="btn btn-primary btn-sm" href="contact.html#join">Join Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="badge"><span class="badge-dot"></span> Learning &bull; Projects &bull; Careers</span>
+          <h1 class="hero-title" id="hero-title"><span>Learn.</span> <span>Build.</span> <span
+              class="grad-text">Rise.</span></h1>
+          <p class="hero-lead">SpireX Foundation helps learners gain practical skills, real project experience and the
+            confidence to grow their careers &mdash; through guided programs, hands-on internships and mentors who
+            support every step.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="internships.html">Explore Internships <span class="ico"
+                data-icon="arrow-right"></span></a>
+            <a class="btn btn-outline" href="programs.html">Explore Programs</a>
+          </div>
+          <ul class="hero-points">
+            <li><span class="ico" data-icon="check-circle"></span>Beginner friendly</li>
+            <li><span class="ico" data-icon="check-circle"></span>Project-based learning</li>
+            <li><span class="ico" data-icon="check-circle"></span>Mentor guided</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" data-tilt-area>
+          <div class="tilt-stage" data-tilt>
+            <div class="hero-glow" aria-hidden="true"></div>
+
+            <div class="float-wrap">
+              <div class="code-window">
+                <div class="cw-bar">
+                  <span class="cw-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span class="cw-file" id="cwFile">index.html</span>
+                </div>
+                <div class="cw-tabs" role="tablist" aria-label="Code examples">
+                  <button class="cw-tab is-active" type="button" role="tab" aria-selected="true"
+                    data-tab="html">HTML</button>
+                  <button class="cw-tab" type="button" role="tab" aria-selected="false" tabindex="-1"
+                    data-tab="css">CSS</button>
+                  <button class="cw-tab" type="button" role="tab" aria-selected="false" tabindex="-1"
+                    data-tab="js">JavaScript</button>
+                </div>
+                <div class="cw-body">
+                  <pre class="cw-panel is-active" role="tabpanel" data-panel="html"><code><span class="cm">&lt;!-- Learn. Build. Rise. --&gt;</span>
+<span class="tk">&lt;section</span> <span class="at">class</span>=<span class="st">"hero"</span><span class="tk">&gt;</span>
+  <span class="tk">&lt;h1&gt;</span>Learn. Build. Rise.<span class="tk">&lt;/h1&gt;</span>
+  <span class="tk">&lt;p&gt;</span>Real skills. Real projects.<span class="tk">&lt;/p&gt;</span>
+  <span class="tk">&lt;a</span> <span class="at">href</span>=<span class="st">"programs.html"</span><span class="tk">&gt;</span>Start<span class="tk">&lt;/a&gt;</span>
+<span class="tk">&lt;/section&gt;</span></code></pre>
+                  <pre class="cw-panel" role="tabpanel" data-panel="css"><code><span class="fn">.hero</span> {
+  <span class="pr">display</span>: <span class="nm">grid</span>;
+  <span class="pr">place-items</span>: <span class="nm">center</span>;
+  <span class="pr">background</span>: <span class="fn">var</span>(--brand);
+  <span class="pr">animation</span>: rise <span class="nm">1s</span> ease-out;
+}</code></pre>
+                  <pre class="cw-panel" role="tabpanel" data-panel="js"><code><span class="kw">const</span> journey = {
+  learn: <span class="st">"practical skills"</span>,
+  build: <span class="st">"real projects"</span>,
+  rise: <span class="st">"career growth"</span>,
+};
+Object.<span class="fn">keys</span>(journey).<span class="fn">forEach</span>(show);</code></pre>
+                </div>
+              </div>
+            </div>
+
+            <div class="float-card fc-ui" aria-hidden="true">
+              <span class="fc-icon"><span class="ico" data-icon="layout"></span></span>
+              <div><strong>UI/UX</strong><small>Design system</small><span
+                  class="swatches"><i></i><i></i><i></i><i></i></span></div>
+            </div>
+            <div class="float-card fc-dev" aria-hidden="true">
+              <span class="fc-icon"><span class="ico" data-icon="terminal"></span></span>
+              <div><strong>Development</strong><small>Building components</small><span class="progress-line"></span>
+              </div>
+            </div>
+            <div class="float-card fc-chip fc-html" aria-hidden="true"><i></i>&lt;/&gt; HTML5</div>
+            <div class="float-card fc-chip fc-css" aria-hidden="true"><i></i>CSS3</div>
+            <div class="float-card fc-chip fc-js" aria-hidden="true"><i></i>JS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Why SpireX / Company highlights ===== -->
+    <section class="section" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Why SpireX</span>
+          <h2 id="why-title">Skills that turn into real experience</h2>
+          <p>We combine hands-on learning, real project work and personal mentorship so learners are ready for what
+            comes next.</p>
+        </div>
+        <div class="grid grid-4">
+          <article class="card reveal">
+            <div class="icon-box"><span class="ico" data-icon="code"></span></div>
+            <h3>Practical Skills</h3>
+            <p>Hands-on lessons focused on the tools and techniques used in real web and design work &mdash; not just
+              theory.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><span class="ico" data-icon="layers"></span></div>
+            <h3>Real Projects</h3>
+            <p>Build portfolio-ready projects from clear briefs, with review and feedback along the way.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><span class="ico" data-icon="users"></span></div>
+            <h3>Expert Mentorship</h3>
+            <p>Get guidance from experienced mentors who help you get unstuck and keep improving.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><span class="ico" data-icon="trending"></span></div>
+            <h3>Career Development</h3>
+            <p>Prepare for internships and jobs with portfolio reviews, interview practice and clear next steps.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== How it works ===== -->
+    <section class="section section-alt" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">How it works</span>
+          <h2 id="how-title">Learn. Build. Rise.</h2>
+          <p>A simple path from first lesson to real-world confidence.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="step-num">1</div>
+            <h3>Learn</h3>
+            <p>Start with structured lessons in HTML, CSS, JavaScript and UI/UX fundamentals at your own level.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num">2</div>
+            <h3>Build</h3>
+            <p>Apply what you learn to real project briefs &mdash; working on your own and in small teams.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num">3</div>
+            <h3>Rise</h3>
+            <p>Present your work, receive feedback and step into internships and career opportunities.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Features / benefits ===== -->
+    <section class="section" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Benefits</span>
+          <h2 id="benefits-title">Everything you need to grow</h2>
+          <p>Every SpireX experience is designed to build skills you can actually show.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="icon-box"><span class="ico" data-icon="compass"></span></div>
+            <h3>Structured Learning Paths</h3>
+            <p>Clear roadmaps so you always know what to learn next and why it matters.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><span class="ico" data-icon="briefcase"></span></div>
+            <h3>Portfolio-Ready Work</h3>
+            <p>Finish with projects you can share with mentors, teams and future employers.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><span class="ico" data-icon="message"></span></div>
+            <h3>Feedback &amp; Code Review</h3>
+            <p>Regular, constructive feedback that helps you write cleaner code and better designs.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><span class="ico" data-icon="users"></span></div>
+            <h3>Team Collaboration</h3>
+            <p>Practise working with others &mdash; planning, communicating and delivering together.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><span class="ico" data-icon="smartphone"></span></div>
+            <h3>Responsive Design Skills</h3>
+            <p>Learn to build interfaces that look and work well on every screen size.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><span class="ico" data-icon="target"></span></div>
+            <h3>Career Preparation</h3>
+            <p>Resume tips, interview practice and guidance to help you take your next step.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Explore ===== -->
+    <section class="section section-alt" aria-labelledby="explore-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Get started</span>
+          <h2 id="explore-title">Find your place at SpireX</h2>
+          <p>Choose the way you want to learn and grow.</p>
+        </div>
+        <div class="grid grid-3">
+          <a class="card reveal" href="internships.html">
+            <div class="icon-box"><span class="ico" data-icon="briefcase"></span></div>
+            <h3>Internships</h3>
+            <p>Gain hands-on experience on guided, real-world tasks alongside mentors.</p>
+            <span class="card-arrow">View internships <span class="ico" data-icon="arrow-right"></span></span>
+          </a>
+          <a class="card reveal" href="programs.html">
+            <div class="icon-box"><span class="ico" data-icon="book"></span></div>
+            <h3>Programs</h3>
+            <p>Structured courses, workshops and mentorship for every stage of your journey.</p>
+            <span class="card-arrow">View programs <span class="ico" data-icon="arrow-right"></span></span>
+          </a>
+          <a class="card reveal" href="projects.html">
+            <div class="icon-box"><span class="ico" data-icon="layers"></span></div>
+            <h3>Projects</h3>
+            <p>See the kind of practical work learners build as they grow their skills.</p>
+            <span class="card-arrow">View projects <span class="ico" data-icon="arrow-right"></span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Call to action ===== -->
+    <section class="section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta reveal">
+          <h2 id="cta-title">Ready to Start Your Journey?</h2>
+          <p>Join SpireX Foundation and take the next step &mdash; learn practical skills, build real projects and grow
+            with mentors who care about your progress.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="contact.html#join">Join Now <span class="ico"
+                data-icon="arrow-right"></span></a>
+            <a class="btn btn-outline" href="programs.html">Browse Programs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Shared footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="SpireX Foundation - Home">
+            <img class="brand-mark" src="images/logo.svg" alt="" width="38" height="38">
+            <span class="brand-name">SpireX <span>Foundation</span></span>
+          </a>
+          <p class="footer-tagline grad-text">Learn. Build. Rise.</p>
+          <p>SpireX Foundation helps learners gain practical skills, real project experience and career growth through
+            programs, internships and mentorship.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <p class="footer-title">Explore</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="internships.html">Internships</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Get involved">
+          <p class="footer-title">Get Involved</p>
+          <ul class="footer-links">
+            <li><a href="internships.html#apply">Apply for an Internship</a></li>
+            <li><a href="programs.html#project-lab">Project Lab</a></li>
+            <li><a href="programs.html#mentorship">Mentorship Circle</a></li>
+            <li><a href="contact.html#faq">Frequently Asked Questions</a></li>
+            <li><a href="contact.html#join">Join SpireX</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="footer-title">Contact</p>
+          <ul class="footer-contact">
+            <li><span class="ico" data-icon="mail"></span><span>hello@spirexfoundation.org</span></li>
+            <li><span class="ico" data-icon="map-pin"></span><span>Online &amp; community-based learning</span></li>
+            <li><span class="ico" data-icon="clock"></span><span>Mon &ndash; Fri, 9:00 &ndash; 17:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> SpireX Foundation. All rights reserved.</p>
+        <p>Built with HTML, CSS &amp; JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
