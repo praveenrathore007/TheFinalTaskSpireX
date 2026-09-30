@@ -2087,6 +2087,13 @@ a.card:hover .card-arrow .ico svg {
   margin: 0;
 }
 
+.footer-bottom.centered-credits {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  text-align: center;
+}
+
 /* 14. ANIMATIONS ---------------------------------------------------------- */
 .reveal.in-view {
   animation: reveal-up 0.75s var(--ease) backwards;

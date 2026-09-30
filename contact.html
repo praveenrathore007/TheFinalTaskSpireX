@@ -70,7 +70,7 @@
               <div class="icon-box"><span class="ico" data-icon="map-pin"></span></div>
               <div>
                 <h3>Where we work</h3>
-                <p>Online &amp; community-based learning</p>
+                <p><a class="grad-text" href="programs.html">Online &amp; community-based learning</a></p>
               </div>
             </div>
             <div class="card info-item card-static">
@@ -85,7 +85,7 @@
 
         <div class="reveal">
           <div class="card card-static form-card">
-            <form data-validate data-success="Thank you, {name}! Your message is complete.">
+            <form data-validate data-success="Form sent successfully! Thank you for reaching out to us. We will get back to you soon." data-error="Please fix the errors in the form and try again.">
               <div class="form-grid two">
                 <div class="field">
                   <label for="name">Full name</label>
@@ -113,8 +113,8 @@
                 </div>
                 <div class="field full">
                   <label for="message">Your message</label>
-                  <textarea id="message" name="message" placeholder="Write your message here..." required minlength="20"
-                    data-error="Please write a short message."></textarea>
+                  <textarea id="message" name="message" placeholder="Write your message here..." required
+                    data-error="Please enter your message."></textarea>
                   <p class="error-msg" role="alert"></p>
                 </div>
                 <div class="field full">
@@ -130,8 +130,6 @@
                       data-icon="send"></span></button>
                 </div>
               </div>
-              <p class="form-note">Demo note: this is a front-end project, so form data is checked in your browser and
-                is not sent anywhere.</p>
             </form>
             <div class="form-success" role="status">
               <span class="ico" data-icon="check-circle"></span>
@@ -163,12 +161,23 @@
           </details>
           <details>
             <summary>How do I apply for an internship?</summary>
-            <p>Visit the <a href="internships.html#apply" style="color: var(--accent); font-weight: 600;">Internships
-                page</a>, choose a track and complete the short application form.</p>
+            <p>Visit the <a class="grad-text" href="internships.html#apply">Internships page</a>, choose a track and complete the short application form.</p>
           </details>
           <details>
             <summary>Can I become a mentor or partner with SpireX?</summary>
             <p>Yes! Select "Mentoring or partnership" in the form above and tell us how you'd like to get involved.</p>
+          </details>
+          <details>
+            <summary>Where can I learn about your programs?</summary>
+            <p>Visit our <a class="grad-text" href="programs.html">Programs page</a> to explore current learning options.</p>
+          </details>
+          <details>
+            <summary>Can beginners join SpireX?</summary>
+            <p>Yes, several programs and internship tracks are designed for beginners.</p>
+          </details>
+          <details>
+            <summary>When can I expect a reply?</summary>
+            <p>We aim to reply to direct email inquiries within 2 business days.</p>
           </details>
         </div>
       </div>
@@ -233,9 +242,10 @@
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="footer-bottom centered-credits">
         <p>&copy; <span data-year>2026</span> SpireX Foundation. All rights reserved.</p>
-        <p>Built with HTML, CSS &amp; JavaScript.</p>
+        <p>Updated on <time datetime="2026-09-30">September 30, 2026</time></p>
+        <p>Built with HTML, CSS, and JavaScript.</p>
       </div>
     </div>
   </footer>
