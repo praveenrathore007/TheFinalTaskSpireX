@@ -314,42 +314,74 @@
     var lastOpener = null;
 
     function setText(sel, text) { var el = $(sel, modal); if (el) { el.textContent = text; } }
-
     function openModal(card, opener) {
       var img = $('[data-m="img"]', modal);
+
       if (img) {
         img.src = card.getAttribute('data-img') || '';
         img.alt = card.getAttribute('data-alt') || '';
       }
+
       setText('[data-m="cat"]', card.getAttribute('data-cat-label') || 'Project');
       setText('[data-m="title"]', card.getAttribute('data-title') || '');
       setText('[data-m="summary"]', card.getAttribute('data-summary') || '');
 
       var tools = $('[data-m="tools"]', modal);
+
       if (tools) {
         tools.innerHTML = '';
+
         (card.getAttribute('data-tools') || '').split(',').forEach(function (t) {
           if (!t.trim()) { return; }
+
           var s = doc.createElement('span');
           s.className = 'tag';
           s.textContent = t.trim();
           tools.appendChild(s);
         });
       }
+
       var learn = $('[data-m="learn"]', modal);
+
       if (learn) {
         learn.innerHTML = '';
+
         (card.getAttribute('data-learn') || '').split('|').forEach(function (t) {
           if (!t.trim()) { return; }
+
           var li = doc.createElement('li');
           li.textContent = t.trim();
           learn.appendChild(li);
         });
       }
 
+      /* ---------- Optional project links ---------- */
+      var liveLink = $('[data-m="live"]', modal);
+      var githubLink = $('[data-m="github"]', modal);
+
+      function updateLink(link, url) {
+        if (!link) { return; }
+
+        if (url) {
+          link.href = url;
+          link.hidden = false;
+        } else {
+          link.hidden = true;
+          link.removeAttribute('href');
+        }
+      }
+
+      updateLink(liveLink, card.getAttribute('data-live'));
+      updateLink(githubLink, card.getAttribute('data-github'));
+
       lastOpener = opener;
-      if (typeof modal.showModal === 'function') { modal.showModal(); }
-      else { modal.setAttribute('open', ''); }
+
+      if (typeof modal.showModal === 'function') {
+        modal.showModal();
+      } else {
+        modal.setAttribute('open', '');
+      }
+
       doc.body.classList.add('no-scroll');
     }
 
